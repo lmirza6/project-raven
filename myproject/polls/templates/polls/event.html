@@ -1,11 +1,9 @@
 {% extends "base.html" %}
 {% block title %}Polls{% endblock %} {% block content %}
 
-<p>All Events</p>
+<p>Specifc Event:</p>
 <ul> {% for report in reports %}
-        <li>{{ reports }}
-            {{ date }}
-        </li>
+        <li>{{ report }}</li>
     {% empty %}
        
     {% endfor %}

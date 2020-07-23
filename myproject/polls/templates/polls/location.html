@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Polls{% endblock %} {% block content %}
+
+<p>All Locations:</p>
+<ul style="list-style: none;"> {% for location in locations %}
+        <li>{{ location }}</li>
+    {% empty %}
+       
+    {% endfor %}
+</ul>
+{% endblock %}
