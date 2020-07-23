@@ -18,6 +18,14 @@ class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0) 
-
     def __str__(self):
         return self.choice_text 
+
+class User(models.Model):
+    date = models.DateTimeField(max_length=64)
+    location = models.CharField(max_length=128)
+    description = models.TextField()
+    def __str__(self):
+        return self.user_text 
+
+
