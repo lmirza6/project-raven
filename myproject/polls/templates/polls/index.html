@@ -1,10 +1,9 @@
-{% extends "base.html" %} 
-{% block title %}Polls{% endblock %} {% block content %} 
-
-<ul> {% for question in questions %}
-        <li>{{ question.question_text }}</li> 
-    {% empty %} 
-        <li>No questions</li> 
+{% extends "base.html" %}
+{% block title %}Polls{% endblock %} {% block content %}
+<ul> {% for report in reports %}
+        <li>{{ report }}</li>
+    {% empty %}
+       
     {% endfor %}
 </ul>
 {% endblock %}
